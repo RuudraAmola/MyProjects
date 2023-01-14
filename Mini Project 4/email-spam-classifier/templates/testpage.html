@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spam Classifier project</title>
+</head>
+<body>
+
+    <h1>E-mail SPAM CLASSIFIER</h1>
+
+    {% if response %}
+        {% if response == -1 %}
+            <h2 style="color:green">NOT Spam</h2>
+        {% else %}
+            <h2 style="color:red">SPAM Alert!!!</h2>
+        {% endif %}
+    {% endif %}
+
+    <form action="/predict_model" method="post">
+        <label>Type your email in the textbox below to check:</label><br><br>
+        <textarea rows="10" cols="50" name="email"></textarea><br><br>  
+        <input type="submit" value="Check">
+    </form>
+
+</body>
+</html>
