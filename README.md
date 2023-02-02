@@ -1,2 +1,2 @@
 # MyProjects
-This repository contains the project created in college years.
+This repository contains the projects created in college years.
